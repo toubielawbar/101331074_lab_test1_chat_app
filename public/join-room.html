@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swavy-ui@1.1.0/dist/css/swavy-ui.min.css" />
+</head>
+<body>
+
+    <div class="sw_wrapper sw_mt-5">
+        <div class="sw_notification sw_notification-larger">
+            <h3 class="sw_ds-inline-block">Welcome user</h3>
+            <a href="" class="sw_btn bg-coral st-white sw_rsq-1 sw_ds-inline-block sw_align-right">LOGOUT</a>
+        </div>
+
+        <div>
+
+            <div class="sw_panel sw_panel-outline br-coral sw_rsq-1">
+                <div class="sw_panel-wrapper">
+                    <div class="chat-room-name">
+                        <h4>Room List</h4>
+                    </div>
+                    <hr class="sw_hr" />
+                    
+                    <form action="/join-room" method="post" class="sw_form">
+                        <label for="">Select Room to join</label>
+                        <select name="room" id="roomSelect" class="sw_form-select">
+                            <option value="">Choose</option>
+                            <option value="devops">Devops</option>
+                            <option value="cloud-computing">Cloud Computing</option>
+                            <option value="covid19">Covid19</option>
+                            <option value="nodejs">NodeJS</option>
+                            <option value="sports">Sports</option>
+                        </select>
+                        <input type="submit" class="sw_btn sw_rsq-1 bg-coral st-white" value="JOIN ROOM" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        const socket = io();
+
+        document.getElementById('roomForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const room = document.getElementById('roomSelect').value;
+            socket.emit('joinRoom', room);
+        });
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swavy-ui@1.1.0/dist/js/swavy-ui.min.js"></script>
+    <script src="https://kit.fontawesome.com/fd77bdae8b.js"></script>
+</body>
+</html>

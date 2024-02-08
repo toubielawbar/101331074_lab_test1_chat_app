@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swavy-ui@1.1.0/dist/css/swavy-ui.min.css" />
+</head>
+<body>
+
+    <div class="sw_wrapper sw_mt-5">
+        <div class="sw_notification sw_notification-larger">
+            <h3 class="sw_ds-inline-block">CHAT ROOM</h3>
+            
+        </div>
+
+        <div>
+
+            <div class="sw_panel sw_panel-outline br-coral sw_rsq-1">
+                <div class="sw_panel-wrapper">
+                    <div class="chat-room-name">
+                        <h4>Login</h4>
+                    </div>
+                    <hr class="sw_hr" />
+                    
+                    <form action="/login" method="post" class="sw_form">
+                        <label for="">Username</label>
+                        <input type="text" class="sw_form-input" name="username" />
+
+                        <label for="">Password</label>
+                        <input type="password" class="sw_form-input" name="password" />
+
+                        <input type="submit" class="sw_btn sw_rsq-1 bg-coral st-white" value="LOGIN" />
+                    </form>
+                    <p class="font_xd-1 sw_mt-2">New user? Register <a href="/register" class="font_xd-1">here</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swavy-ui@1.1.0/dist/js/swavy-ui.min.js"></script>
+    <script src="https://kit.fontawesome.com/fd77bdae8b.js"></script>
+</body>
+</html>

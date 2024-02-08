@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swavy-ui@1.1.0/dist/css/swavy-ui.min.css" />
+</head>
+<body>
+
+    <div class="sw_wrapper sw_mt-5">
+        <div class="sw_notification sw_notification-larger">
+            <h3 class="sw_ds-inline-block">CHAT ROOM</h3>
+            <div class="sw_ds-inline-block sw_align-right">
+                <a href="" class="sw_btn bg-coral st-white sw_rsq-1 ">LEAVE ROOM</a>
+                <a href="" class="sw_btn bg-coral st-white sw_rsq-1 ">LOGOUT</a>
+            </div>
+            
+        </div>
+
+        <div>
+            <div class="sw_grid-row">
+                <div class="sw_grid sw_grid-30">
+                    <div class="sw_panel sw_panel-outline br-coral sw_rsq-1">
+                        <div class="sw_panel-wrapper">
+                            <div class="chat-room-name">
+                                <h4>DevOps Room</h4>
+                            </div>
+                            <hr class="sw_hr" />
+                            
+                            <ul class="sw_list sw_list-large panel_collapse" id="users">
+                                <li class="sw_list-menu">
+                                    <span class="sw_btn sw_round sw_ds-inline-block bg-none br-coral" style="width: 40px; height: 40px; cursor: text;"><i class="fa-regular fa-user st-coral"></i></span>
+                                    <a href="" class="sw_ds-inline-block st-coral">@username</a>
+                                </li>
+
+                                <li class="sw_list-menu">
+                                    <span class="sw_btn sw_round sw_ds-inline-block bg-none br-coral" style="width: 40px; height: 40px; cursor: text;"><i class="fa-regular fa-user st-coral"></i></span>
+                                    <a href="" class="sw_ds-inline-block st-coral">@username</a>
+                                </li>
+                            </ul>
+
+                            <!-- <ul id="users">
+                                <li>
+                                    <div class="bg-whitesmoke sw_pd-2" style="cursor: pointer;">
+                                        <span class="sw_btn sw_round sw_ds-inline-block bg-none br-coral" style="width: 40px; height: 40px; cursor: text;"><i class="fa-regular fa-user st-coral"></i></span>
+                                        <p class="sw_ds-inline-block">@username</p>
+                                    </div>
+                                </li>
+                            </ul> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="sw_grid sw_grid-70">
+                    <div class="sw_panel sw_panel-outline br-coral sw_rsq-1">
+                        <div class="sw_panel-wrapper">
+                            <div class="chat-room-name">
+                                <h4>@username</h4>
+                            </div>
+
+                            <div class="sw_panel sw_panel-outline sw_rsq-1 sw_mb-3">
+                                <div class="sw_panel-header bg-none">
+                                    <a href="" class="st-coral">@other user</a>
+                                    <span class="f">@04:30pm</span>
+                                </div>
+                                <div class="sw_panel-wrapper">
+                                    
+                                </div>
+                            </div>
+                           
+                            <div class="sw_panel">
+                                <div class="sw_panel-wrapper">
+                                    <div class="sw_form-addon sw_form-addon-large sw_form-addon-append sw_no-br">
+                                        <textarea class="sw_form-input sw_no-resize font_xd-2" style="font-size: .75rem;"></textarea>
+                                        <button class="addon-icon addon-click st-coral">
+                                            <i class="fa-solid fa-paper-plane"></i>
+                                        </button>
+                                    </div>
+
+                                    
+                                   
+                                </div>
+                            </div>
+                            
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swavy-ui@1.1.0/dist/js/swavy-ui.min.js"></script>
+    <script src="https://kit.fontawesome.com/fd77bdae8b.js"></script>
+</body>
+</html>
